@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "language": "nep",
+  "model_label": "L",
+  "architecture": "decoder-only-prenorm-gpt",
+  "positional_embeddings": "learned_absolute",
+  "normalization": "pre_norm",
+  "activation": "gelu",
+  "tie_word_embeddings": true,
+  "d_model": 384,
+  "n_layer": 4,
+  "n_head": 6,
+  "d_ff": 1536,
+  "seq_len": 128,
+  "dropout": 0.1,
+  "vocab_size": null,
+  "training": {
+    "optimizer": "adamw",
+    "learning_rate": 0.0003,
+    "min_learning_rate": 0.00003,
+    "weight_decay": 0.1,
+    "betas": [0.9, 0.95],
+    "grad_clip": 1.0,
+    "warmup_fraction": 0.02,
+    "batch_size": 128,
+    "grad_accum": 1,
+    "max_tokens": null,
+    "eval_every": 2500,
+    "ckpt_every": 2500,
+    "eval_batches": 2,
+    "keep_last": 1,
+    "n_epochs": 1,
+    "seed": 2026
+  },
+  "generation": {
+    "prefix_tokens": 16,
+    "max_new_tokens": 32,
+    "temperatures": [0.0, 0.5, 1.0, 1.5],
+    "num_examples": 16
+  },
+  "attention_examples": [
+    "माघ ११, दाङ । नेपालमा पछिल्लो २४ घण्टामा ८ कोरोना संक्रमितको मृत्यु भएको छ।"
+  ]
+}

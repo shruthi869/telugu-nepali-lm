@@ -1,0 +1,19 @@
+{
+  "id": "manual_nepali_documents_example",
+  "approved": false,
+  "language": "nep",
+  "source_type": "manually_curated_documents",
+  "collection_method": "manual_files",
+  "input_directory": "raw/manual/manual_nepali_documents_example",
+  "manual_chunk_characters": 20000,
+  "ocr_mode": "auto",
+  "ocr_languages": "nep+eng",
+  "ocr_dpi": 300,
+  "ocr_psm": 3,
+  "rights_basis": "public_domain",
+  "license_expression": "ADD_EXACT_LICENSE_OR_PUBLIC_DOMAIN_BASIS",
+  "attribution_text": "ADD_AUTHOR_TITLE_SOURCE_AND_REQUIRED_CREDIT",
+  "target_clean_tokens": 10000000,
+  "policy_snapshot": "configs/policy_snapshots/ADD_POLICY_SNAPSHOT_BEFORE_APPROVAL.md",
+  "manual_collection": true
+}

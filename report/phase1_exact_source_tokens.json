@@ -1,0 +1,29 @@
+{
+  "nep": {
+    "downloaded_sentencepiece_tokens": 467673506,
+    "language": "nep",
+    "manual_fraction": 0.1095053205,
+    "manual_requirement_met": false,
+    "manual_sentencepiece_tokens": 57510436,
+    "source_sentencepiece_tokens": {
+      "hplt_v2_nepali": 57410925,
+      "manual_nepali_globalvoices_cc_by": 97048,
+      "manual_nepali_wikisource_pd_nepal": 2463,
+      "sangraha_nep_verified": 467673506
+    },
+    "total_sentencepiece_tokens": 525183942
+  },
+  "tel": {
+    "downloaded_sentencepiece_tokens": 476794182,
+    "language": "tel",
+    "manual_fraction": 0.1951740058,
+    "manual_requirement_met": false,
+    "manual_sentencepiece_tokens": 115624738,
+    "source_sentencepiece_tokens": {
+      "hplt_v2_telugu": 113807336,
+      "manual_telugu_wikisource_pd_india": 1817402,
+      "sangraha_tel_verified": 476794182
+    },
+    "total_sentencepiece_tokens": 592418920
+  }
+}

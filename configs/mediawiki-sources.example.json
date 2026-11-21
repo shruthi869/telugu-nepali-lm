@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "id": "manual_telugu_wikisource_example",
+      "approved": false,
+      "language": "tel",
+      "source_type": "wikisource",
+      "collection_method": "mediawiki_category_html",
+      "url": "https://te.wikisource.org/wiki/Category:PD_India",
+      "allowed_domains": ["te.wikisource.org"],
+      "allowed_paths": ["/wiki/"],
+      "excluded_templates": ["Non-free DLI", "Copyrighted"],
+      "required_license_categories": ["PD India"],
+      "excluded_categories": ["Non-free DLI books", "Copyright violations"],
+      "pilot_max_documents": 500,
+      "target_clean_tokens": 1000000,
+      "crawl_delay": 0.25,
+      "robots": true,
+      "rights_basis": "open_license",
+      "license_expression": "CC-BY-SA-4.0",
+      "attribution_text": "Credit the named Wikisource contributors and link the source page and license.",
+      "policy_snapshot": "configs/policy_snapshots/ADD_POLICY_SNAPSHOT_BEFORE_APPROVAL.md",
+      "manual_collection": true
+    },
+    {
+      "id": "manual_nepali_wikisource_example",
+      "approved": false,
+      "language": "nep",
+      "source_type": "wikisource",
+      "collection_method": "mediawiki_category_html",
+      "url": "https://wikisource.org/wiki/Category:PD-Nepal",
+      "allowed_domains": ["wikisource.org"],
+      "allowed_paths": ["/wiki/"],
+      "excluded_templates": ["Copyrighted"],
+      "required_license_categories": ["PD-Nepal"],
+      "excluded_categories": ["Copyright violations"],
+      "pilot_max_documents": 500,
+      "target_clean_tokens": 100000,
+      "crawl_delay": 0.25,
+      "robots": true,
+      "rights_basis": "open_license",
+      "license_expression": "CC-BY-SA-4.0",
+      "attribution_text": "Credit the named Wikisource contributors and link the source page and license.",
+      "policy_snapshot": "configs/policy_snapshots/ADD_POLICY_SNAPSHOT_BEFORE_APPROVAL.md",
+      "manual_collection": true
+    }
+  ]
+}

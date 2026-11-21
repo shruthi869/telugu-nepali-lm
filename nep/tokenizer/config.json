@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "language": "nep",
+  "algorithm": "bpe",
+  "vocabulary_candidates": [16000, 24000, 32000, 48000],
+  "character_coverage": 0.9995,
+  "training_sample_whitespace_tokens": 25000000,
+  "max_training_line_characters": 4096,
+  "evaluation_max_whitespace_tokens": 0,
+  "maximum_unknown_token_rate": 0.001,
+  "fertility_tolerance_from_best": 0.02,
+  "normalization_rule_name": "identity",
+  "byte_fallback": true,
+  "num_threads": 2,
+  "minimum_train_tokens": 500000000,
+  "user_defined_symbols": ["[EMAIL_REDACTED]", "[PHONE_REDACTED]", "[ID_REDACTED]"]
+}

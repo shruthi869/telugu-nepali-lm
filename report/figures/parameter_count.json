@@ -1,0 +1,8 @@
+{
+  "final_layer_norm": 768,
+  "output_head": 0,
+  "position_embeddings": 49152,
+  "token_embeddings": 18432000,
+  "total_unique": 25579776,
+  "transformer_blocks": 7097856
+}

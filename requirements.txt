@@ -1,0 +1,3 @@
+# Colab install file for this project. PyTorch, numpy, and matplotlib
+# are already on the Colab runtime and must not be pinned here.
+-r requirements-colab.txt

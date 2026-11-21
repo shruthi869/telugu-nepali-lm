@@ -1,0 +1,952 @@
+{
+  "languages": {
+    "nep": {
+      "preprocessing": {
+        "created_at": "2026-08-18T06:17:39+00:00",
+        "deduplication": {
+          "accepted_before_dedup": 820443,
+          "document_id_collisions_resolved": 0,
+          "exact_removed": 49749,
+          "lsh_bands": 16,
+          "lsh_rows": 8,
+          "max_shingles_for_candidate_generation": 5000,
+          "minhash_size": 128,
+          "near_removed": 354,
+          "split_decontamination": "global verified-near-dedup before deterministic split",
+          "split_decontamination_removed": 0,
+          "verified_jaccard_threshold": 0.8
+        },
+        "language_id_model": {
+          "name": "fastText lid.176.ftz",
+          "path": "/content/drive/MyDrive/lma_data/lid.176.ftz",
+          "sha256": "8f3472cfe8738a7b6099e8e999c3cbfae0dcd15696aac7d7738a8039db603e83",
+          "version": "lid.176.ftz (official frozen model)"
+        },
+        "manual_fraction_requirement_met": false,
+        "manual_fraction_requirement_waived": false,
+        "manual_train_token_fraction": 0.1095053205,
+        "manual_train_tokens": 11045978,
+        "minimum_train_tokens": 500000000,
+        "minimum_train_tokens_met": true,
+        "missing_or_empty_outputs": [],
+        "output_shards": {
+          "test": 1,
+          "train": 76,
+          "validation": 1
+        },
+        "registry_sha256": "1654e6a66948c059822f55a3719d1d6efd27783c687c7a2767220cc03d803c5f",
+        "rejection_counts": {
+          "language_id": 408937,
+          "low_target_script_ratio": 3866,
+          "repeated_content": 702,
+          "replacement_character_rate": 2,
+          "symbol_heavy": 1,
+          "too_few_target_script_characters": 437,
+          "too_short": 4408,
+          "url_heavy": 499
+        },
+        "sampling": {
+          "downloaded_sample_rate": 0.12627883018958502,
+          "manual_sample_rate": 1.0,
+          "sample_rate": 0.12627883018958502,
+          "target_downloaded_tokens": 500000000
+        },
+        "source_train_tokens": {
+          "hplt_v2_nepali": 108741820,
+          "manual_nepali_globalvoices_cc_by": 150603,
+          "manual_nepali_wikisource_pd_nepal": 2995,
+          "sangraha_nep_verified": 886486728
+        },
+        "statistics": {
+          "test": {
+            "characters": 14949697,
+            "documents": 7737,
+            "whitespace_tokens": 5441987
+          },
+          "train": {
+            "characters": 2340589127,
+            "documents": 1180426,
+            "whitespace_tokens": 995382146
+          },
+          "validation": {
+            "characters": 14883501,
+            "documents": 7688,
+            "whitespace_tokens": 5422893
+          }
+        },
+        "training_status": "draft"
+      },
+      "exact_training_token_count": {
+        "count_definition": "selected 48000-piece SentencePiece tokenizer applied to every final train document",
+        "downloaded_sentencepiece_tokens": 467673506,
+        "documents": 1180426,
+        "manual_fraction": 0.1095053205,
+        "manual_requirement_met": false,
+        "manual_sentencepiece_tokens": 57510436,
+        "sentencepiece_tokens": 525183942,
+        "source_sentencepiece_tokens": {
+          "hplt_v2_nepali": 57410925,
+          "manual_nepali_globalvoices_cc_by": 97048,
+          "manual_nepali_wikisource_pd_nepal": 2463,
+          "sangraha_nep_verified": 467673506
+        },
+        "target_sentencepiece_tokens": 500000000,
+        "target_fraction": 1.050367884,
+        "whitespace_words": 230426067
+      },
+      "tokenizer": {
+        "candidates": [
+          {
+            "metrics": {
+              "average_characters_per_token": 3.8869250160549798,
+              "byte_fallback_token_rate": 0.004322244858773378,
+              "byte_fallback_tokens": 13979,
+              "characters": 14883501,
+              "documents": 7688,
+              "documents_with_byte_fallback": 1096,
+              "documents_with_byte_fallback_rate": 0.1425598335067638,
+              "fertility_subwords_per_whitespace_token": 1.3939912072755485,
+              "non_whitespace_characters": 12571089,
+              "observed_vocabulary_size": 15801,
+              "subword_tokens": 3234199,
+              "tokens_observed_once": 73,
+              "unknown_token_rate": 0.0,
+              "unknown_tokens": 0,
+              "vocabulary_utilization": 0.9875625,
+              "whitespace_tokens": 2320100
+            },
+            "vocabulary_size": 16000
+          },
+          {
+            "metrics": {
+              "average_characters_per_token": 4.103190713296026,
+              "byte_fallback_token_rate": 0.0045627314372816185,
+              "byte_fallback_tokens": 13979,
+              "characters": 14883501,
+              "documents": 7688,
+              "documents_with_byte_fallback": 1096,
+              "documents_with_byte_fallback_rate": 0.1425598335067638,
+              "fertility_subwords_per_whitespace_token": 1.3205185121330978,
+              "non_whitespace_characters": 12571089,
+              "observed_vocabulary_size": 23693,
+              "subword_tokens": 3063735,
+              "tokens_observed_once": 187,
+              "unknown_token_rate": 0.0,
+              "unknown_tokens": 0,
+              "vocabulary_utilization": 0.9872083333333334,
+              "whitespace_tokens": 2320100
+            },
+            "vocabulary_size": 24000
+          },
+          {
+            "metrics": {
+              "average_characters_per_token": 4.236535589208251,
+              "byte_fallback_token_rate": 0.004711010398664916,
+              "byte_fallback_tokens": 13979,
+              "characters": 14883501,
+              "documents": 7688,
+              "documents_with_byte_fallback": 1096,
+              "documents_with_byte_fallback_rate": 0.1425598335067638,
+              "fertility_subwords_per_whitespace_token": 1.2789552174475238,
+              "non_whitespace_characters": 12571089,
+              "observed_vocabulary_size": 31472,
+              "subword_tokens": 2967304,
+              "tokens_observed_once": 432,
+              "unknown_token_rate": 0.0,
+              "unknown_tokens": 0,
+              "vocabulary_utilization": 0.9835,
+              "whitespace_tokens": 2320100
+            },
+            "vocabulary_size": 32000
+          },
+          {
+            "metrics": {
+              "average_characters_per_token": 4.395777691524962,
+              "byte_fallback_token_rate": 0.004888086970812746,
+              "byte_fallback_tokens": 13979,
+              "characters": 14883501,
+              "documents": 7688,
+              "documents_with_byte_fallback": 1096,
+              "documents_with_byte_fallback_rate": 0.1425598335067638,
+              "fertility_subwords_per_whitespace_token": 1.2326235938106116,
+              "non_whitespace_characters": 12571089,
+              "observed_vocabulary_size": 46202,
+              "subword_tokens": 2859810,
+              "tokens_observed_once": 2016,
+              "unknown_token_rate": 0.0,
+              "unknown_tokens": 0,
+              "vocabulary_utilization": 0.9625416666666666,
+              "whitespace_tokens": 2320100
+            },
+            "vocabulary_size": 48000
+          }
+        ],
+        "model": {
+          "bytes": 1406777,
+          "exists": true,
+          "path": "tokenizers/draft-v1/nep/tokenizer.model",
+          "sha256": "b2ae811597a7f1c37c0a300e432b4eac180e0dbb48f6737ac79e605662e76f5d"
+        },
+        "preprocessing_gate": {
+          "manual_fraction_override_used": true,
+          "manual_fraction_requirement_met": false,
+          "manual_train_token_fraction": 0.0205366267321255,
+          "minimum_train_tokens_met": true,
+          "training_status": "draft"
+        },
+        "selected_metrics": {
+          "average_characters_per_token": 4.395777691524962,
+          "byte_fallback_token_rate": 0.004888086970812746,
+          "byte_fallback_tokens": 13979,
+          "characters": 14883501,
+          "documents": 7688,
+          "documents_with_byte_fallback": 1096,
+          "documents_with_byte_fallback_rate": 0.1425598335067638,
+          "fertility_subwords_per_whitespace_token": 1.2326235938106116,
+          "non_whitespace_characters": 12571089,
+          "observed_vocabulary_size": 46202,
+          "subword_tokens": 2859810,
+          "tokens_observed_once": 2016,
+          "unknown_token_rate": 0.0,
+          "unknown_tokens": 0,
+          "vocabulary_utilization": 0.9625416666666666,
+          "whitespace_tokens": 2320100
+        },
+        "selected_vocabulary_size": 48000,
+        "tokenization_examples": [
+          {
+            "document_id": "sangraha_nep_verified:13c04efd73d254cf:01d68a938f55a86ba6bc4a0fe375068263a6bccd",
+            "pieces": [
+              "\u2581\u092e\u093e\u0918",
+              "\u2581\u0967\u0967",
+              ",",
+              "\u2581\u0926\u093e\u0919",
+              "\u2581\u0964",
+              "\u2581\u0928\u0947\u092a\u093e\u0932\u092e\u093e",
+              "\u2581\u092a\u091b\u093f\u0932\u094d\u0932\u094b",
+              "\u2581\u0968\u096a",
+              "\u2581\u0918\u0923\u094d\u091f\u093e\u092e\u093e",
+              "\u2581\u096e",
+              "\u2581\u0915\u094b\u0930\u094b\u0928\u093e",
+              "\u2581\u0938\u0902\u0915\u094d\u0930\u092e\u093f\u0924\u0915\u094b",
+              "\u2581\u092e\u0943\u0924\u094d\u092f\u0941",
+              "\u2581\u092d\u090f\u0915\u094b",
+              "\u2581\u091b",
+              "\u0964",
+              "\u2581\u0938\u094b\u0939\u0940",
+              "\u2581\u0905\u0935\u0927\u093f\u092e\u093e",
+              "\u2581\u092e\u0941\u0932\u0941\u0915\u0915\u093e",
+              "\u2581\u0935\u093f\u092d\u093f\u0928\u094d\u0928",
+              "\u2581\u0905\u0938\u094d\u092a\u0924\u093e\u0932\u092c\u093e\u091f",
+              "\u2581\u0969\u0966",
+              "\u096a\u0966",
+              "\u2581\u091c\u0928\u093e",
+              "\u2581\u0915\u094b\u0930\u094b\u0928\u093e",
+              "\u2581\u0938\u0902\u0915\u094d\u0930\u092e\u0923\u092e\u0941\u0915\u094d\u0924",
+              "\u2581\u092d\u090f\u0915\u094b",
+              "\u2581\u092e\u0928\u094d\u0924\u094d\u0930\u093e\u0932\u092f\u0932\u0947",
+              "\u2581\u091c\u093e\u0928\u0915\u093e\u0930\u0940",
+              "\u2581\u0926\u093f\u090f\u0915\u094b",
+              "\u2581\u091b",
+              "\u2581\u0964",
+              "\u2581\u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f",
+              "\u2581\u092e\u0928\u094d\u0924\u094d\u0930\u093e\u0932\u092f\u0915\u093e",
+              "\u2581\u0905\u0928\u0941\u0938\u093e\u0930",
+              "\u2581\u0928\u093f\u0915\u094b",
+              "\u2581\u0939\u0941\u0928\u0947",
+              "\u2581\u0926\u0930",
+              "\u2581\u096e\u096f",
+              "\u2581\u0926\u0936\u092e\u0932\u092c",
+              "\u2581\u0968",
+              "\u2581\u0930\u0939\u0947\u0915\u094b",
+              "\u2581\u091b",
+              "\u2581\u0964"
+            ],
+            "text": "\u092e\u093e\u0918 \u0967\u0967, \u0926\u093e\u0919 \u0964 \u0928\u0947\u092a\u093e\u0932\u092e\u093e \u092a\u091b\u093f\u0932\u094d\u0932\u094b \u0968\u096a \u0918\u0923\u094d\u091f\u093e\u092e\u093e \u096e \u0915\u094b\u0930\u094b\u0928\u093e \u0938\u0902\u0915\u094d\u0930\u092e\u093f\u0924\u0915\u094b \u092e\u0943\u0924\u094d\u092f\u0941 \u092d\u090f\u0915\u094b \u091b\u0964 \u0938\u094b\u0939\u0940 \u0905\u0935\u0927\u093f\u092e\u093e \u092e\u0941\u0932\u0941\u0915\u0915\u093e \u0935\u093f\u092d\u093f\u0928\u094d\u0928 \u0905\u0938\u094d\u092a\u0924\u093e\u0932\u092c\u093e\u091f \u0969\u0966\u096a\u0966 \u091c\u0928\u093e \u0915\u094b\u0930\u094b\u0928\u093e \u0938\u0902\u0915\u094d\u0930\u092e\u0923\u092e\u0941\u0915\u094d\u0924 \u092d\u090f\u0915\u094b \u092e\u0928\u094d\u0924\u094d\u0930\u093e\u0932\u092f\u0932\u0947 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0926\u093f\u090f\u0915\u094b \u091b \u0964 \u0938\u094d\u0935\u093e\u0938\u094d\u0925\u094d\u092f \u092e\u0928\u094d\u0924\u094d\u0930\u093e\u0932\u092f\u0915\u093e \u0905\u0928\u0941\u0938\u093e\u0930 \u0928\u093f\u0915\u094b \u0939\u0941\u0928\u0947 \u0926\u0930 \u096e\u096f \u0926\u0936\u092e\u0932\u092c \u0968 \u0930\u0939\u0947\u0915\u094b \u091b \u0964"
+          },
+          {
+            "document_id": "sangraha_nep_verified:13c04efd73d254cf:094a2caa825af57bc1e112499c6261bcd1e2a60a",
+            "pieces": [
+              "\u2581\u0967\u0969",
+              "\u2581\u0914\u0902",
+              "\u2581\u0926\u0915\u094d\u0937\u093f\u0923",
+              "\u2581\u090f\u0938\u093f\u092f\u093e\u0932\u0940",
+              "\u2581\u0916\u0947\u0932\u0915\u0941\u0926",
+              "\u2581\u096f",
+              "\u0938\u093e\u0917",
+              "\u0966",
+              "\u2581\u0915\u094b",
+              "\u2581\u0926\u094b\u0939\u094b\u0930\u094b",
+              "\u2581\u0938\u094d\u0935\u0930\u094d\u0923",
+              "\u2581\u092a\u0926\u0915",
+              "\u2581\u0935\u093f\u091c\u0947\u0924\u093e",
+              "\u2581\u0938\u0941\u0935\u093e\u0938",
+              "\u2581\u0924\u093e\u092e\u093e\u0919\u0932\u0947",
+              "\u2581\u092c\u093f\u0939\u0940\u092c\u093e\u0930",
+              "\u2581\u092a\u093e\u0930",
+              "(",
+              "\u096c\u096e",
+              "\u2581\u0939\u093f\u092e\u093e\u0932\u092f\u0928",
+              "\u2581\u0917\u0932\u094d\u092b",
+              "\u2581\u0915\u094b",
+              "\u0930\u094d\u0938\u092e\u093e",
+              "\u2581\u091c\u093e\u0930\u0940",
+              "\u2581\u0938\u0942\u0930\u094d\u092f",
+              "\u2581\u0928\u0947\u092a\u093e\u0932",
+              "\u2581\u0917\u0932\u094d\u092b",
+              "\u2581\u091f\u0941\u0930",
+              "\u2581\u0968\u0966\u0968\u0967",
+              "(",
+              "\u0968\u0968",
+              "\u2581\u0905\u0928\u094d\u0924\u0930\u094d\u0917\u0924",
+              "\u2581\u092a\u093e\u0901\u091a\u094c\u0902",
+              "\u2581\u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0917\u093f\u0924\u093e",
+              "\u2581\u0938\u0942\u0930\u094d\u092f",
+              "\u2581\u0928\u0947\u092a\u093e\u0932",
+              "\u2581\u0935\u0947\u0938\u094d\u091f\u0930\u094d\u0928",
+              "\u2581\u0913\u092a\u0928\u0915\u094b",
+              "\u2581\u0926\u094b\u0938\u094d\u0930\u094b",
+              "\u2581\u091a\u0930\u0923\u092e\u093e",
+              "\u2581\u0905\u0917\u094d\u0930\u0924\u093e",
+              "\u2581\u0915\u093e\u092f\u092e",
+              "\u2581\u0930\u093e\u0916\u0947\u0915\u093e",
+              "\u2581\u091b\u0928\u094d",
+              "\u2581\u0964",
+              "\u2581\u0936\u0940\u0930\u094d\u0937",
+              "\u2581\u090f\u092e\u0947\u091a\u094d\u092f\u094b\u0930",
+              "\u2581\u0938\u0941",
+              "\u0935\u093e\u0938\u0932\u0947",
+              "\u2581\u0926\u094b\u0938\u094d\u0930\u094b",
+              "\u2581\u0930\u093e\u0909\u0923\u094d\u0921\u092e\u093e",
+              "\u2581\u0969\u096c",
+              "\u2581\u0939\u094b\u0932",
+              "\u2581\u091c\u092e\u094d\u092e\u093e",
+              "\u2581\u0935\u0928",
+              "\u2581\u0905\u0928\u094d\u0921\u0930"
+            ],
+            "text": "\u0967\u0969 \u0914\u0902 \u0926\u0915\u094d\u0937\u093f\u0923 \u090f\u0938\u093f\u092f\u093e\u0932\u0940 \u0916\u0947\u0932\u0915\u0941\u0926 \u096f\u0938\u093e\u0917\u0966 \u0915\u094b \u0926\u094b\u0939\u094b\u0930\u094b \u0938\u094d\u0935\u0930\u094d\u0923 \u092a\u0926\u0915 \u0935\u093f\u091c\u0947\u0924\u093e \u0938\u0941\u0935\u093e\u0938 \u0924\u093e\u092e\u093e\u0919\u0932\u0947 \u092c\u093f\u0939\u0940\u092c\u093e\u0930 \u092a\u093e\u0930(\u096c\u096e \u0939\u093f\u092e\u093e\u0932\u092f\u0928 \u0917\u0932\u094d\u092b \u0915\u094b\u0930\u094d\u0938\u092e\u093e \u091c\u093e\u0930\u0940 \u0938\u0942\u0930\u094d\u092f \u0928\u0947\u092a\u093e\u0932 \u0917\u0932\u094d\u092b \u091f\u0941\u0930 \u0968\u0966\u0968\u0967(\u0968\u0968 \u0905\u0928\u094d\u0924\u0930\u094d\u0917\u0924 \u092a\u093e\u0901\u091a\u094c\u0902 \u092a\u094d\u0930\u0924\u093f\u092f\u094b\u0917\u093f\u0924\u093e \u0938\u0942\u0930\u094d\u092f \u0928\u0947\u092a\u093e\u0932 \u0935\u0947\u0938\u094d\u091f\u0930\u094d\u0928 \u0913\u092a\u0928\u0915\u094b \u0926\u094b\u0938\u094d\u0930\u094b \u091a\u0930\u0923\u092e\u093e \u0905\u0917\u094d\u0930\u0924\u093e \u0915\u093e\u092f\u092e \u0930\u093e\u0916\u0947\u0915\u093e \u091b\u0928\u094d \u0964 \u0936\u0940\u0930\u094d\u0937 \u090f\u092e\u0947\u091a\u094d\u092f\u094b\u0930 \u0938\u0941\u0935\u093e\u0938\u0932\u0947 \u0926\u094b\u0938\u094d\u0930\u094b \u0930\u093e\u0909\u0923\u094d\u0921\u092e\u093e \u0969\u096c \u0939\u094b\u0932 \u091c\u092e\u094d\u092e\u093e \u0935\u0928 \u0905\u0928\u094d\u0921\u0930 "
+          }
+        ],
+        "top_tokens": [
+          {
+            "count": 109573,
+            "fraction": 0.03831478314992954,
+            "id": 272,
+            "piece": "\u2581\u0964"
+          },
+          {
+            "count": 59234,
+            "fraction": 0.02071256482073984,
+            "id": 47941,
+            "piece": ","
+          },
+          {
+            "count": 44505,
+            "fraction": 0.01556222266514209,
+            "id": 280,
+            "piece": "\u2581\u091b"
+          },
+          {
+            "count": 44424,
+            "fraction": 0.015533899105185309,
+            "id": 274,
+            "piece": "\u2581\u0930"
+          },
+          {
+            "count": 32621,
+            "fraction": 0.011406701843828786,
+            "id": 47922,
+            "piece": "\u0964"
+          },
+          {
+            "count": 20950,
+            "fraction": 0.007325661494994423,
+            "id": 376,
+            "piece": "\u2581\u092a\u0928\u093f"
+          },
+          {
+            "count": 15393,
+            "fraction": 0.0053825254125274054,
+            "id": 342,
+            "piece": "\u2581\u092d\u090f\u0915\u094b"
+          },
+          {
+            "count": 14993,
+            "fraction": 0.005242655980642071,
+            "id": 359,
+            "piece": "\u2581\u091b\u0928\u094d"
+          },
+          {
+            "count": 13318,
+            "fraction": 0.00465695273462223,
+            "id": 372,
+            "piece": "\u2581\u0939\u094b"
+          },
+          {
+            "count": 12924,
+            "fraction": 0.004519181344215175,
+            "id": 399,
+            "piece": "\u2581\u0932\u093e\u0917\u093f"
+          },
+          {
+            "count": 12607,
+            "fraction": 0.004408334819446047,
+            "id": 362,
+            "piece": "\u2581\u0917\u0930\u0947\u0915\u094b"
+          },
+          {
+            "count": 11386,
+            "fraction": 0.003981383378616062,
+            "id": 437,
+            "piece": "\u2581\u0917\u0930\u094d\u0928"
+          },
+          {
+            "count": 10380,
+            "fraction": 0.0036296117574244444,
+            "id": 414,
+            "piece": "\u2581\u092d\u0928\u0947"
+          },
+          {
+            "count": 10279,
+            "fraction": 0.003594294725873397,
+            "id": 412,
+            "piece": "\u2581\u0925\u093f\u092f\u094b"
+          },
+          {
+            "count": 9905,
+            "fraction": 0.003463516807060609,
+            "id": 47958,
+            "piece": "-"
+          }
+        ],
+        "training_sample": {
+          "characters": 167472041,
+          "documents": 85306,
+          "fingerprint": "028f0d2590cf53d2b8e6bb94cd8c00b1ab0c8f867c39bae51b1851a9b7ce3d6a",
+          "language": "nep",
+          "lines": 97029,
+          "manifest_sha256": "33acbf9935f59b74e4dfd878c33453d46ade7e98dd0829134b716695b3c1aa8a",
+          "max_training_line_characters": 4096,
+          "measured_train_documents": 754915,
+          "measured_train_whitespace_tokens": 230426067,
+          "probability": 0.11391940305087098,
+          "sample_path": "audit/draft-v1/tokenizer/nep/training-sample-028f0d2590cf53d2.txt.gz",
+          "schema_version": 2,
+          "selection_seed": "draft-v1:sentencepiece-training-sample-v1",
+          "sha256": "9b580468bab2f68a4e129f51ecc2a30bdeab9f9931b25ac5e3d6dd375f02bded",
+          "target_whitespace_tokens": 25000000,
+          "whitespace_tokens": 26132108
+        },
+        "vocabulary": {
+          "bytes": 1345507,
+          "exists": true,
+          "path": "tokenizers/draft-v1/nep/tokenizer.vocab",
+          "sha256": "b446973d1eab7b3f8b441eb08cb74215eec26b5fc3a4ec19ec3ad32f5f8e7082"
+        }
+      }
+    },
+    "tel": {
+      "preprocessing": {
+        "created_at": "2026-08-18T09:37:40+00:00",
+        "deduplication": {
+          "accepted_before_dedup": 843671,
+          "document_id_collisions_resolved": 235,
+          "exact_removed": 15,
+          "lsh_bands": 16,
+          "lsh_rows": 8,
+          "max_shingles_for_candidate_generation": 5000,
+          "minhash_size": 128,
+          "near_removed": 619,
+          "split_decontamination": "global verified-near-dedup before deterministic split",
+          "split_decontamination_removed": 0,
+          "verified_jaccard_threshold": 0.8
+        },
+        "language_id_model": {
+          "name": "fastText lid.176.ftz",
+          "path": "/content/drive/MyDrive/lma_data/lid.176.ftz",
+          "sha256": "8f3472cfe8738a7b6099e8e999c3cbfae0dcd15696aac7d7738a8039db603e83",
+          "version": "lid.176.ftz (official frozen model)"
+        },
+        "manual_fraction_requirement_met": false,
+        "manual_fraction_requirement_waived": false,
+        "manual_train_token_fraction": 0.1951740058,
+        "manual_train_tokens": 119993612,
+        "minimum_train_tokens": 500000000,
+        "minimum_train_tokens_met": true,
+        "missing_or_empty_outputs": [],
+        "output_shards": {
+          "test": 1,
+          "train": 83,
+          "validation": 1
+        },
+        "registry_sha256": "1654e6a66948c059822f55a3719d1d6efd27783c687c7a2767220cc03d803c5f",
+        "rejection_counts": {
+          "low_target_script_ratio": 29120,
+          "repeated_content": 21826,
+          "symbol_heavy": 82,
+          "too_few_target_script_characters": 1273,
+          "too_short": 3579,
+          "url_heavy": 1343
+        },
+        "sampling": {
+          "downloaded_sample_rate": 0.10732034385002395,
+          "manual_sample_rate": 1.0,
+          "sample_rate": 0.10732034385002395,
+          "target_downloaded_tokens": 500000000
+        },
+        "source_train_tokens": {
+          "hplt_v2_telugu": 198274102,
+          "manual_telugu_wikisource_pd_india": 2376536,
+          "sangraha_tel_verified": 827553871
+        },
+        "statistics": {
+          "test": {
+            "characters": 18644879,
+            "documents": 8446,
+            "whitespace_tokens": 6935148
+          },
+          "train": {
+            "characters": 2750418932,
+            "documents": 1215842,
+            "whitespace_tokens": 1028214509
+          },
+          "validation": {
+            "characters": 18356223,
+            "documents": 8468,
+            "whitespace_tokens": 6826427
+          }
+        },
+        "training_status": "draft"
+      },
+      "exact_training_token_count": {
+        "count_definition": "selected 48000-piece SentencePiece tokenizer applied to every final train document",
+        "downloaded_sentencepiece_tokens": 476794182,
+        "documents": 1215842,
+        "manual_fraction": 0.1951740058,
+        "manual_requirement_met": false,
+        "manual_sentencepiece_tokens": 115624738,
+        "sentencepiece_tokens": 592418920,
+        "source_sentencepiece_tokens": {
+          "hplt_v2_telugu": 113807336,
+          "manual_telugu_wikisource_pd_india": 1817402,
+          "sangraha_tel_verified": 476794182
+        },
+        "target_sentencepiece_tokens": 500000000,
+        "target_fraction": 1.18483784,
+        "whitespace_words": 225524437
+      },
+      "tokenizer": {
+        "candidates": [
+          {
+            "metrics": {
+              "average_characters_per_token": 3.508893134803821,
+              "byte_fallback_token_rate": 0.006289334263631148,
+              "byte_fallback_tokens": 28809,
+              "characters": 18356223,
+              "documents": 8468,
+              "documents_with_byte_fallback": 1975,
+              "documents_with_byte_fallback_rate": 0.23323098724610297,
+              "fertility_subwords_per_whitespace_token": 1.998684883976136,
+              "non_whitespace_characters": 16072878,
+              "observed_vocabulary_size": 15838,
+              "subword_tokens": 4580612,
+              "tokens_observed_once": 41,
+              "unknown_token_rate": 0.0,
+              "unknown_tokens": 0,
+              "vocabulary_utilization": 0.989875,
+              "whitespace_tokens": 2291813
+            },
+            "vocabulary_size": 16000
+          },
+          {
+            "metrics": {
+              "average_characters_per_token": 3.7381707035712557,
+              "byte_fallback_token_rate": 0.00670029099948275,
+              "byte_fallback_tokens": 28809,
+              "characters": 18356223,
+              "documents": 8468,
+              "documents_with_byte_fallback": 1975,
+              "documents_with_byte_fallback_rate": 0.23323098724610297,
+              "fertility_subwords_per_whitespace_token": 1.8760972208465525,
+              "non_whitespace_characters": 16072878,
+              "observed_vocabulary_size": 23792,
+              "subword_tokens": 4299664,
+              "tokens_observed_once": 93,
+              "unknown_token_rate": 0.0,
+              "unknown_tokens": 0,
+              "vocabulary_utilization": 0.9913333333333333,
+              "whitespace_tokens": 2291813
+            },
+            "vocabulary_size": 24000
+          },
+          {
+            "metrics": {
+              "average_characters_per_token": 3.8909899646411805,
+              "byte_fallback_token_rate": 0.00697420399080661,
+              "byte_fallback_tokens": 28809,
+              "characters": 18356223,
+              "documents": 8468,
+              "documents_with_byte_fallback": 1975,
+              "documents_with_byte_fallback_rate": 0.23323098724610297,
+              "fertility_subwords_per_whitespace_token": 1.802413198633571,
+              "non_whitespace_characters": 16072878,
+              "observed_vocabulary_size": 31709,
+              "subword_tokens": 4130794,
+              "tokens_observed_once": 180,
+              "unknown_token_rate": 0.0,
+              "unknown_tokens": 0,
+              "vocabulary_utilization": 0.99090625,
+              "whitespace_tokens": 2291813
+            },
+            "vocabulary_size": 32000
+          },
+          {
+            "metrics": {
+              "average_characters_per_token": 4.089308030807558,
+              "byte_fallback_token_rate": 0.007329668965292647,
+              "byte_fallback_tokens": 28809,
+              "characters": 18356223,
+              "documents": 8468,
+              "documents_with_byte_fallback": 1975,
+              "documents_with_byte_fallback_rate": 0.23323098724610297,
+              "fertility_subwords_per_whitespace_token": 1.7150020529598182,
+              "non_whitespace_characters": 16072878,
+              "observed_vocabulary_size": 47368,
+              "subword_tokens": 3930464,
+              "tokens_observed_once": 616,
+              "unknown_token_rate": 0.0,
+              "unknown_tokens": 0,
+              "vocabulary_utilization": 0.9868333333333333,
+              "whitespace_tokens": 2291813
+            },
+            "vocabulary_size": 48000
+          }
+        ],
+        "model": {
+          "bytes": 1399362,
+          "exists": true,
+          "path": "tokenizers/draft-v1/tel/tokenizer.model",
+          "sha256": "6bee8844c135999e752fd4c089cebc36014f5dd7eef6a61ed67faa46b62d4ae9"
+        },
+        "preprocessing_gate": {
+          "manual_fraction_override_used": true,
+          "manual_fraction_requirement_met": false,
+          "manual_train_token_fraction": 0.1792798262733811,
+          "minimum_train_tokens_met": true,
+          "training_status": "draft"
+        },
+        "selected_metrics": {
+          "average_characters_per_token": 4.089308030807558,
+          "byte_fallback_token_rate": 0.007329668965292647,
+          "byte_fallback_tokens": 28809,
+          "characters": 18356223,
+          "documents": 8468,
+          "documents_with_byte_fallback": 1975,
+          "documents_with_byte_fallback_rate": 0.23323098724610297,
+          "fertility_subwords_per_whitespace_token": 1.7150020529598182,
+          "non_whitespace_characters": 16072878,
+          "observed_vocabulary_size": 47368,
+          "subword_tokens": 3930464,
+          "tokens_observed_once": 616,
+          "unknown_token_rate": 0.0,
+          "unknown_tokens": 0,
+          "vocabulary_utilization": 0.9868333333333333,
+          "whitespace_tokens": 2291813
+        },
+        "selected_vocabulary_size": 48000,
+        "tokenization_examples": [
+          {
+            "document_id": "manual_telugu_wikisource_pd_india:1269c79bb24e176e:209458",
+            "pieces": [
+              "\u2581\u0c38\u0c30\u0c38\u0c4d\u0c35\u0c24\u0c40",
+              "\u2581\u0c38\u0c4d\u0c24\u0c41\u0c24\u0c3f",
+              "\u2581(",
+              "\u0c35\u0c3f\u0c26\u0c4d",
+              "\u0c35\u0c3e\u0c28\u0c4d",
+              "\u2581\u0c15\u0c32\u0c4d\u0c32",
+              "\u0c42\u0c30\u0c3f",
+              "\u2581\u0c35\u0c46\u0c02\u0c15\u0c1f",
+              "\u2581\u0c38\u0c41\u0c2c\u0c4d\u0c30\u0c39\u0c4d\u0c2e\u0c23\u0c4d\u0c2f",
+              "\u2581\u0c26\u0c40\u0c15\u0c4d\u0c37\u0c3f\u0c24\u0c41\u0c32\u0c41",
+              "\u0c17\u0c3e\u0c30\u0c41",
+              ")",
+              "\u2581\u0c36\u0c4d\u0c30\u0c40\u0c35\u0c3e",
+              "\u0c23\u0c40",
+              "!",
+              "\u2581\u0c2f\u0c28\u0c3f",
+              "\u0c2a\u0c3f\u0c32\u0c4d",
+              "\u0c35",
+              ",",
+              "\u2581\u0c32\u0c15\u0c4d\u0c37\u0c4d\u0c2e\u0c3f",
+              "\u2581\u0c24\u0c4a\u0c32\u0c41\u0c24",
+              "\u2581\u0c36\u0c4d\u0c30\u0c40",
+              "\u2581\u0c36\u0c2c\u0c4d\u0c26",
+              "\u0c2e\u0c3e\u0c24\u0c4d",
+              "\u0c2e\u0c3e\u0c30\u0c4d\u0c25",
+              "\u0c15\u0c02",
+              "\u2581\u0c2c\u0c48",
+              "\u2581\u0c35\u0c3e",
+              "\u0c33",
+              "\u0c4a",
+              "\u0c02\u0c1f",
+              "\u2581\u0c38\u0c3f",
+              "\u0c30\u0c41\u0c32\u0c4d",
+              "\u0c39",
+              "\u0c1f\u0c3f",
+              "\u0c02\u0c2a",
+              ";",
+              "\u2581\u0c28\u0c26\u0c3f",
+              "\u2581\u0c36\u0c4b\u0c2d",
+              "\u0c3e\u0c30\u0c4d\u0c25",
+              "\u0c02\u0c2c\u0c41\u0c17\u0c3e",
+              "\u2581\u0c28\u0c40\u0c35\u0c41",
+              "\u2581\u0c35\u0c3f",
+              "\u2581\u0c26\u0c4d\u0c2f\u0c3e",
+              "\u0c35\u0c48",
+              "\u0c36",
+              "\u0c26\u0c4d\u0c2f",
+              "\u0c2e\u0c41",
+              "\u2581\u0c17\u0c42\u0c30\u0c4d",
+              "\u0c24\u0c41",
+              ",",
+              "\u2581\u0c2d\u0c3e\u0c30\u0c24\u0c3f",
+              "\u2581!",
+              "\u2581\u0c35\u0c3f\u0c1a\u0c3f\u0c24\u0c4d\u0c30\u0c02",
+              "\u2581\u0c2c\u0c3f",
+              "\u0c1f\u0c4d\u0c32\u0c41",
+              "\u2581\u0c2e\u0c40",
+              "\u0c42",
+              "\u2581\u0c2e\u0c40",
+              "\u2581\u0c35\u0c3f\u0c30\u0c4b",
+              "\u2581\u0c27\u0c3e",
+              "\u2581\u0c35\u0c47\u0c36",
+              "\u0c02\u0c2c\u0c41\u0c32",
+              "\u2581\u0c15\u0c3e\u0c30\u0c4d",
+              "\u0c24\u0c30",
+              "\u0c15\u0c4d\u0c37\u0c23",
+              "\u0c15\u0c33\u0c3e",
+              "\u2581\u0c35\u0c4d\u0c2f\u0c3e\u0c38",
+              "\u0c15\u0c4d\u0c24\u0c3f",
+              "\u2581\u0c28\u0c47",
+              "\u0c15\u0c3e",
+              "\u0c17\u0c4d\u0c30",
+              "\u0c24\u0c3e",
+              "\u2581\u0c2d\u0c3e\u0c35\u0c02",
+              "\u0c2c\u0c42",
+              "\u0c28\u0c4d",
+              "\u0c1a\u0c46",
+              "\u0c21\u0c3f",
+              "\u2581\u0c35\u0c3f\u0c36\u0c4d\u0c35",
+              "\u0c24\u0c4b"
+            ],
+            "text": "\u0c38\u0c30\u0c38\u0c4d\u0c35\u0c24\u0c40 \u0c38\u0c4d\u0c24\u0c41\u0c24\u0c3f (\u0c35\u0c3f\u0c26\u0c4d\u0c35\u0c3e\u0c28\u0c4d \u0c15\u0c32\u0c4d\u0c32\u0c42\u0c30\u0c3f \u0c35\u0c46\u0c02\u0c15\u0c1f \u0c38\u0c41\u0c2c\u0c4d\u0c30\u0c39\u0c4d\u0c2e\u0c23\u0c4d\u0c2f \u0c26\u0c40\u0c15\u0c4d\u0c37\u0c3f\u0c24\u0c41\u0c32\u0c41\u0c17\u0c3e\u0c30\u0c41) \u0c36\u0c4d\u0c30\u0c40\u0c35\u0c3e\u0c23\u0c40! \u0c2f\u0c28\u0c3f\u0c2a\u0c3f\u0c32\u0c4d\u0c35, \u0c32\u0c15\u0c4d\u0c37\u0c4d\u0c2e\u0c3f \u0c24\u0c4a\u0c32\u0c41\u0c24 \u0c36\u0c4d\u0c30\u0c40 \u0c36\u0c2c\u0c4d\u0c26\u0c2e\u0c3e\u0c24\u0c4d\u0c2e\u0c3e\u0c30\u0c4d\u0c25\u0c15\u0c02 \u0c2c\u0c48 \u0c35\u0c3e\u0c33\u0c4a\u0c02\u0c1f \u0c38\u0c3f\u0c30\u0c41\u0c32\u0c4d\u0c39\u0c1f\u0c3f\u0c02\u0c2a; \u0c28\u0c26\u0c3f \u0c36\u0c4b\u0c2d\u0c3e\u0c30\u0c4d\u0c25\u0c02\u0c2c\u0c41\u0c17\u0c3e \u0c28\u0c40\u0c35\u0c41 \u0c35\u0c3f \u0c26\u0c4d\u0c2f\u0c3e\u0c35\u0c48\u0c36\u0c26\u0c4d\u0c2f\u0c2e\u0c41 \u0c17\u0c42\u0c30\u0c4d\u0c24\u0c41, \u0c2d\u0c3e\u0c30\u0c24\u0c3f ! \u0c35\u0c3f\u0c1a\u0c3f\u0c24\u0c4d\u0c30\u0c02 \u0c2c\u0c3f\u0c1f\u0c4d\u0c32\u0c41 \u0c2e\u0c40\u0c42 \u0c2e\u0c40 \u0c35\u0c3f\u0c30\u0c4b \u0c27\u0c3e \u0c35\u0c47\u0c36\u0c02\u0c2c\u0c41\u0c32 \u0c15\u0c3e\u0c30\u0c4d\u0c24\u0c30\u0c15\u0c4d\u0c37\u0c23\u0c15\u0c33\u0c3e \u0c35\u0c4d\u0c2f\u0c3e\u0c38\u0c15\u0c4d\u0c24\u0c3f \u0c28\u0c47\u0c15\u0c3e\u0c17\u0c4d\u0c30\u0c24\u0c3e \u0c2d\u0c3e\u0c35\u0c02\u0c2c\u0c42\u0c28\u0c4d\u0c1a\u0c46\u0c21\u0c3f \u0c35\u0c3f\u0c36\u0c4d\u0c35\u0c24\u0c4b\u0c2e\u0c41\u0c16\u0c2e\u0c41 \u0c36\u0c2c"
+          },
+          {
+            "document_id": "manual_telugu_wikisource_pd_india:653a6e720c695163:215628",
+            "pieces": [
+              "\u2581\u0c2a\u0c40\u0c20",
+              "\u0c3f\u0c15",
+              "\u2581\u0c2a\u0c3e",
+              "\u0c33\u0c40",
+              "\u0c2d\u0c3e\u0c37",
+              "\u0c2f\u0c02\u0c26\u0c41",
+              "\u2581\u0c35\u0c4d\u0c30\u0c3e\u0c2f",
+              "\u0c01\u0c2c\u0c21\u0c3f\u0c28",
+              "\u2581\u0c2c\u0c4c\u0c26\u0c4d\u0c27",
+              "\u0c35\u0c48",
+              "\u0c26\u0c3f\u0c15",
+              "\u0c17\u0c4d\u0c30\u0c02\u0c25",
+              "\u0c2e\u0c41\u0c32\u0c32\u0c4b",
+              "\u2581\u0c27",
+              "\u0c2e\u0c4d\u0c2e",
+              "\u0c2a\u0c26\u0c02",
+              "\u2581\u0c2c\u0c4a\u0c15\u0c4d\u0c15",
+              "\u0c1f\u0c3f",
+              "\u0c17\u0c01",
+              "\u2581\u0c2c\u0c47",
+              "\u0c30\u0c4d\u0c15\u0c4a",
+              "\u0c28\u0c01",
+              "\u0c2c\u0c21\u0c41",
+              "\u0c1a\u0c41\u0c28\u0c4d\u0c28\u0c26\u0c3f",
+              ".",
+              "\u2581\"",
+              "\u0c24\u0c4d\u0c30\u0c3f",
+              "\u0c2a\u0c3f",
+              "\u0c1f\u0c15",
+              "\"",
+              "\u2581\u0c28\u0c3e\u0c2e\u0c02",
+              "\u0c2c\u0c41\u0c28",
+              "\u2581\u0c2c\u0c4c\u0c26\u0c4d\u0c27",
+              "\u0c2e",
+              "\u0c24\u0c3e",
+              "\u0c35\u0c32\u0c02",
+              "\u0c2c\u0c41",
+              "\u0c15\u0c41\u0c32",
+              "\u0c1a\u0c47",
+              "\u2581\u0c35\u0c4d\u0c2f\u0c35\u0c39\u0c30\u0c3f",
+              "\u0c02\u0c2a\u0c01\u0c2c\u0c21\u0c41",
+              "\u0c1a\u0c41\u0c28\u0c4d\u0c28",
+              "\u2581\u0c2f\u0c40",
+              "\u0c2c\u0c4c",
+              "\u0c26\u0c4d\u0c27",
+              "\u0c35\u0c48",
+              "\u0c26\u0c3f\u0c15",
+              "\u0c17\u0c4d\u0c30\u0c02\u0c25",
+              "\u0c1c\u0c3e\u0c32\u0c2e\u0c41",
+              "\u2581",
+              "<0xE2>",
+              "<0x80>",
+              "<0x9C>",
+              "\u0c35\u0c3f\u0c28",
+              "\u0c2f",
+              "\u2581\u0c2a\u0c3f",
+              "\u0c1f\u0c15",
+              "\u0c2e\u0c41",
+              "<0xE2>",
+              "<0x80>",
+              "<0x9D>",
+              ",",
+              "\u2581",
+              "<0xE2>",
+              "<0x80>",
+              "<0x9C>",
+              "\u0c38\u0c41",
+              "\u0c24\u0c4d\u0c24",
+              "\u0c2a\u0c3f",
+              "\u0c1f\u0c15",
+              "\u0c2e\u0c41",
+              "<0xE2>",
+              "<0x80>",
+              "<0x9D>",
+              ",",
+              "\u2581",
+              "<0xE2>",
+              "<0x80>",
+              "<0x9C>",
+              "\u0c05\u0c2d\u0c3f"
+            ],
+            "text": "\u0c2a\u0c40\u0c20\u0c3f\u0c15 \u0c2a\u0c3e\u0c33\u0c40\u0c2d\u0c3e\u0c37\u0c2f\u0c02\u0c26\u0c41 \u0c35\u0c4d\u0c30\u0c3e\u0c2f\u0c01\u0c2c\u0c21\u0c3f\u0c28 \u0c2c\u0c4c\u0c26\u0c4d\u0c27\u0c35\u0c48\u0c26\u0c3f\u0c15\u0c17\u0c4d\u0c30\u0c02\u0c25\u0c2e\u0c41\u0c32\u0c32\u0c4b \u0c27\u0c2e\u0c4d\u0c2e\u0c2a\u0c26\u0c02 \u0c2c\u0c4a\u0c15\u0c4d\u0c15\u0c1f\u0c3f\u0c17\u0c01 \u0c2c\u0c47\u0c30\u0c4d\u0c15\u0c4a\u0c28\u0c01\u0c2c\u0c21\u0c41\u0c1a\u0c41\u0c28\u0c4d\u0c28\u0c26\u0c3f. \"\u0c24\u0c4d\u0c30\u0c3f\u0c2a\u0c3f\u0c1f\u0c15\" \u0c28\u0c3e\u0c2e\u0c02\u0c2c\u0c41\u0c28 \u0c2c\u0c4c\u0c26\u0c4d\u0c27\u0c2e\u0c24\u0c3e\u0c35\u0c32\u0c02\u0c2c\u0c41\u0c15\u0c41\u0c32\u0c1a\u0c47 \u0c35\u0c4d\u0c2f\u0c35\u0c39\u0c30\u0c3f\u0c02\u0c2a\u0c01\u0c2c\u0c21\u0c41\u0c1a\u0c41\u0c28\u0c4d\u0c28 \u0c2f\u0c40\u0c2c\u0c4c\u0c26\u0c4d\u0c27\u0c35\u0c48\u0c26\u0c3f\u0c15\u0c17\u0c4d\u0c30\u0c02\u0c25\u0c1c\u0c3e\u0c32\u0c2e\u0c41 \u201c\u0c35\u0c3f\u0c28\u0c2f \u0c2a\u0c3f\u0c1f\u0c15\u0c2e\u0c41\u201d, \u201c\u0c38\u0c41\u0c24\u0c4d\u0c24\u0c2a\u0c3f\u0c1f\u0c15\u0c2e\u0c41\u201d, \u201c\u0c05\u0c2d\u0c3f\u0c27\u0c2e\u0c4d\u0c2e\u0c2a\u0c3f\u0c1f\u0c15\u0c2e\u0c41\u201d \u0c05\u0c28\u0c41 \u0c2e\u0c42\u0c01\u0c21\u0c41\u0c2d\u0c3e\u0c17\u0c2e\u0c41\u0c32\u0c32\u0c4b\u0c28\u0c3f\u0c15\u0c3f \u0c35\u0c3f\u0c2d\u0c1c\u0c3f\u0c02\u0c2a\u0c01\u0c2c\u0c21\u0c3f\u0c28\u0c26\u0c3f. \u0c05\u0c02\u0c26\u0c41 \u0c38\u0c41\u0c24\u0c4d\u0c24\u0c2a\u0c3f\u0c1f\u0c15\u0c2e\u0c41 \u2018\u0c26\u0c40\u0c18\u0c28\u0c3f\u0c15\u0c3e\u0c2f' '\u0c2e\u0c1c\u0c4d\u0c1d\u0c3f\u0c2e\u0c28\u0c3f\u0c15\u0c3e\u0c2f;' '\u0c38\u0c02\u0c2f\u0c41"
+          }
+        ],
+        "top_tokens": [
+          {
+            "count": 207043,
+            "fraction": 0.05267647789166877,
+            "id": 47885,
+            "piece": "."
+          },
+          {
+            "count": 113333,
+            "fraction": 0.028834509106303988,
+            "id": 47893,
+            "piece": ","
+          },
+          {
+            "count": 59069,
+            "fraction": 0.015028505540312797,
+            "id": 47862,
+            "piece": "\u2581"
+          },
+          {
+            "count": 36419,
+            "fraction": 0.0092658271389841,
+            "id": 47908,
+            "piece": "1"
+          },
+          {
+            "count": 33980,
+            "fraction": 0.008645289716430426,
+            "id": 47910,
+            "piece": "0"
+          },
+          {
+            "count": 30184,
+            "fraction": 0.0076795004355719836,
+            "id": 47911,
+            "piece": "2"
+          },
+          {
+            "count": 25333,
+            "fraction": 0.006445295008426486,
+            "id": 324,
+            "piece": "\u2581\u0c08"
+          },
+          {
+            "count": 15756,
+            "fraction": 0.004008687015069977,
+            "id": 47921,
+            "piece": "9"
+          },
+          {
+            "count": 14716,
+            "fraction": 0.0037440872120950604,
+            "id": 47926,
+            "piece": "5"
+          },
+          {
+            "count": 13155,
+            "fraction": 0.0033469330847452107,
+            "id": 460,
+            "piece": "\u2581("
+          },
+          {
+            "count": 13134,
+            "fraction": 0.003341590204108217,
+            "id": 47929,
+            "piece": "3"
+          },
+          {
+            "count": 11808,
+            "fraction": 0.0030042254553151993,
+            "id": 47934,
+            "piece": "4"
+          },
+          {
+            "count": 11750,
+            "fraction": 0.002989468927841598,
+            "id": 378,
+            "piece": "\u2581."
+          },
+          {
+            "count": 11310,
+            "fraction": 0.002877522857352211,
+            "id": 277,
+            "piece": "\u0c32\u0c4b"
+          },
+          {
+            "count": 11248,
+            "fraction": 0.002861748638328706,
+            "id": 47931,
+            "piece": ")"
+          }
+        ],
+        "training_sample": {
+          "characters": 208151806,
+          "documents": 96350,
+          "fingerprint": "a91f19ae3b9ffcf3ed363ca70add6d8f063e5fb956dc39449ee0325eb02953c4",
+          "language": "tel",
+          "lines": 111183,
+          "manifest_sha256": "a9294b7cf003e7af8eedb8fe53f15b2f04fa3d141c5f810dfca378d4af49f616",
+          "max_training_line_characters": 4096,
+          "measured_train_documents": 826123,
+          "measured_train_whitespace_tokens": 225524437,
+          "probability": 0.11639536872006469,
+          "sample_path": "audit/draft-v1/tokenizer/tel/training-sample-a91f19ae3b9ffcf3.txt.gz",
+          "schema_version": 2,
+          "selection_seed": "draft-v1:sentencepiece-training-sample-v1",
+          "sha256": "425df4042c91981ae8b46ee525849a93522b8022abf2e2e86502d852a4608d7e",
+          "target_whitespace_tokens": 25000000,
+          "whitespace_tokens": 26031253
+        },
+        "vocabulary": {
+          "bytes": 1338092,
+          "exists": true,
+          "path": "tokenizers/draft-v1/tel/tokenizer.vocab",
+          "sha256": "a56cec87194ca2182e4762e12e5770675c289d5846d1996a1aa17c21781b0928"
+        }
+      }
+    }
+  },
+  "run_id": "draft-v1",
+  "schema_version": 1
+}

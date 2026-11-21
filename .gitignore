@@ -1,0 +1,39 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# LaTeX and local PDF-review intermediates; keep only source and final PDF.
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.xdv
+tmp/pdfs/
+
+.venv/
+
+# Local Kaggle/Colab dumps (zip, checkpoints, packed copies). Never commit.
+artifacts/
+
+# These are Drive-backed collection and training outputs, never source-controlled.
+raw/
+pull_state.sqlite
+pull_state.sqlite-*
+processed/
+audit/
+preprocess_state.sqlite
+preprocess_state.sqlite-*
+lid.176.ftz
+lid.176.ftz.part
+tokenized/
+models/
+*.pt
+*.bin
+*.bin.part
+
+# Downloaded Kaggle/Drive zips at repo root. Never commit.
+/*.zip
+/LMA NEP NOPOS Report/
+/LMA Phase 3 Report.zip
